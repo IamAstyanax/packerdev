@@ -9,4 +9,4 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 } 
 
 
-choco install googlechrome
+choco install googlechrome -y
