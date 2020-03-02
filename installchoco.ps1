@@ -9,4 +9,14 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 } 
 
 
-choco install googlechrome -y
+
+#install chrome on server lol
+choco install googlechrome -a
+
+#install np++
+choco install notepadplusplus
+
+#install abc-update for patch management
+choco install abc-update
+
+
