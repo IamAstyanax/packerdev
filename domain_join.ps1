@@ -18,7 +18,15 @@ Do {
             Write-host "CLEARED VALUE"
             $success = 0}
  }
-       
+ While ($success -eq 0) 
+
+
+ $Oldhostname = $env:COMPUTERNAME
+ $password = cat C:\mysecurestring.txt | convertto-securestring
+ $cred = new-object -typename System.Management.Automation.PSCredential -argumentlist $username, $password
+
+
+
 
   #Join domain/Rename
   Rename-Computer -NewName $hostname
