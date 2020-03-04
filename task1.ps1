@@ -1,0 +1,1 @@
+c:\automate\provision.ps1

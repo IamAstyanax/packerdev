@@ -11,12 +11,26 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 
 
 #install chrome on server lol
-choco install googlechrome -a
+choco install googlechrome -y 
 
 #install np++
-choco install notepadplusplus
+choco install notepadplusplus -y
 
 #install abc-update for patch management
-choco install abc-update
+choco install abc-update -y
+
+#install snmp
+c:\git\packerdev\install_snmp.ps1
 
 
+#prompt for roles
+
+
+
+
+
+
+
+
+
+Unregister-ScheduledTask -Taskname InstallGit -a
