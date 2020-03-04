@@ -19,11 +19,27 @@ choco install notepadplusplus -y
 #install abc-update for patch management
 choco install abc-update -y
 
-#install snmp
+#install snmp with netman string
 c:\git\packerdev\install_snmp.ps1
 
 
+
 #prompt for roles
+$installWebServer = Read-Host "Would you like to install IIS? " 
+
+        
+        If ($installWebServer -eq "yes")
+        {
+            c:\git\packerdev\install_iis.ps1 }
+            
+        Elseif ($installWebServer -eq "no")
+        { echo "not installing IIS"
+            
+
+
+ }
+     
+
 
 
 
