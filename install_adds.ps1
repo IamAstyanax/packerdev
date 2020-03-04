@@ -1,0 +1,1 @@
+Install-WindowsFeature Ad-domain-services -IncludeManagementTools

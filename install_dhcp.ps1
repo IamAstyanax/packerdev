@@ -1,0 +1,3 @@
+
+
+Install-WindowsFeature dhcp -IncludeManagementTools
