@@ -1,5 +1,5 @@
 
-
+$name = yourname
 Install-windowsfeature -name SNMP-SERVICE
 
 Start-Sleep -Seconds 30
@@ -12,7 +12,7 @@ $registryPath = "HKLM:\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ValidCo
 Set-Location -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\SNMP\Parameters\ValidCommunities'
 
 
-New-ItemProperty -Path $registryPath -Name netman -Value 4 `
+New-ItemProperty -Path $registryPath -Name $name -Value 4 `
 
     -PropertyType DWORD -Force | Out-Null 
 
